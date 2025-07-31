@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pure Pishori Rice</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffaf3;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    nav {
+      background-color: #003300;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #f0c040;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1609131136982-7c37f993be5d') no-repeat center center/cover;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 0.5em;
+    }
+
+    .hero p {
+      font-size: 1.3em;
+      margin-bottom: 1em;
+    }
+
+    .cta {
+      background-color: #f0c040;
+      color: #003300;
+      padding: 0.7em 1.5em;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .cta:hover {
+      background-color: #e0a030;
+    }
+
+    .features {
+      padding: 60px 20px;
+      background: url('https://images.unsplash.com/photo-1606755962773-0bbf58d8f141') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+    }
+
+    .features .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1em;
+    }
+
+    .features .grid div {
+      background-color: rgba(0, 51, 0, 0.7);
+      padding: 1.5em;
+      border-radius: 10px;
+    }
+
+    .gallery {
+      padding: 60px 20px;
+      text-align: center;
+      background: url('https://images.unsplash.com/photo-1606755962773-0bbf58d8f141') no-repeat center center/cover;
+      background-size: cover;
+      color: #fff;
+    }
+
+    .gallery h2 {
+      margin-bottom: 1em;
+      font-size: 2em;
+      color: #fff;
+    }
+
+    .carousel {
+      position: relative;
+      width: 90%;
+      margin: auto;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      width: 100%;
+    }
+
+    .slide {
+      min-width: 100%;
+      box-sizing: border-box;
+      position: relative;
+    }
+
+    .slide img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 10px;
+    }
+
+    .caption {
+      position: absolute;
+      bottom: 10%;
+      left: 10%;
+      background: rgba(0,0,0,0.5);
+      color: #fff;
+      padding: 1em;
+      border-radius: 8px;
+    }
+
+    .testimonials, .recipe, .contact {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .testimonials h2, .recipe h2, .contact h2 {
+      font-size: 2em;
+      color: #003300;
+      margin-bottom: 1em;
+    }
+
+    .testimonial {
+      background-color: #f5f5f5;
+      margin: 1em auto;
+      padding: 1em;
+      border-radius: 10px;
+      max-width: 600px;
+    }
+
+    iframe {
+      border: none;
+      width: 100%;
+      height: 300px;
+      border-radius: 10px;
+      margin-top: 1em;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#features">Products</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#recipe">How to Cook</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <div class="hero">
+      <h1>Pure Pishori Rice</h1>
+      <p>100% Aromatic Kenyan Pishori Rice</p>
+      <a href="#gallery" class="cta">Shop Now</a>
+    </div>
+  </header>
+
+  <section class="features" id="features">
+    <div class="grid">
+      <div>100% Pure Pishori</div>
+      <div>Affordable Prices</div>
+      <div>Nationwide Delivery</div>
+      <div>Secure M-PESA Payments</div>
+    </div>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <h2>Rice Gallery</h2>
+    <div class="carousel">
+      <div class="slides" id="slides">
+        <div class="slide">
+          <a href="checkout.html">
+            <img src="https://images.unsplash.com/photo-1609131136982-7c37f993be5d" alt="Cooked Pilau">
+            <div class="caption">Cooked Pilau - Aromatic and Spicy</div>
+          </a>
+        </div>
+        <div class="slide">
+          <a href="checkout.html">
+            <img src="https://images.unsplash.com/photo-1613145998174-4e4c9427c353" alt="Plain Pishori">
+            <div class="caption">Steamed Pishori Rice - Soft & Fluffy</div>
+          </a>
+        </div>
+        <div class="slide">
+          <a href="checkout.html">
+            <img src="https://images.unsplash.com/photo-1589304072420-b3fdc0b1ee90" alt="Rice with Veggies">
+            <div class="caption">Pishori with Veggies - Healthy Delight</div>
+          </a>
+        </div>
+        <div class="slide">
+          <a href="checkout.html">
+            <img src="https://images.unsplash.com/photo-1603096902013-d9ce2dd1df09" alt="Pilau Bowl">
+            <div class="caption">Pilau Bowl - Perfect for Guests</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials" id="testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonial">"The best rice I've ever tasted! Aromatic and soft." – Mary N.</div>
+    <div class="testimonial">"Fast delivery and amazing quality. Will order again." – James K.</div>
+    <div class="testimonial">"My whole family loves Pure Pishori!" – Grace M.</div>
+  </section>
+
+  <section class="recipe" id="recipe">
+    <h2>How to Cook Pure Pishori Rice</h2>
+    <p>1. Rinse the rice thoroughly to remove excess starch.<br>
+    2. Use a 1:2 rice to water ratio.<br>
+    3. Bring to a boil, then simmer on low heat for 15-20 minutes.<br>
+    4. Let it rest for 5 minutes before serving. Enjoy!</p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Location: Mwea Ngurumbani<br>Email: purepishori@example.com<br>Phone: +254 791 750762</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.146021835344!2d37.3553714!3d-0.6909141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182a29f06d26f25f%3A0xf5ea6e23b16429f!2sNgurubani%20Town!5e0!3m2!1sen!2ske!4v1722114650000!5m2!1sen!2ske" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <script>
+    let index = 0;
+    const slides = document.getElementById('slides');
+    const totalSlides = slides.children.length;
+
+    setInterval(() => {
+      index = (index + 1) % totalSlides;
+      slides.style.transform = `translateX(-${index * 100}%)`;
+    }, 4000);
+  </script>
+
+</body>
+</html>
